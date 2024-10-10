@@ -5,52 +5,35 @@ import Navbar from './Navbar';
 
 const Home = () => {
   const homeUnderRef = useRef(null);
-  const navbarRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
-  const [navbarHeight, setNavbarHeight] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setScrolled(true);
-        updateNavbarHeight(); 
       } else {
         setScrolled(false);
       }
     };
 
-    const updateNavbarHeight = () => {
-      if (navbarRef.current) {
-        setNavbarHeight(navbarRef.current.offsetHeight);
-      }
-    };
-
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', updateNavbarHeight);
-
-    updateNavbarHeight();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', updateNavbarHeight);
     };
   }, []);
 
   const scrollToHomeUnder = () => {
-    const scrollToPosition = homeUnderRef.current.offsetTop - navbarHeight;
-    window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
-};
-
-  
+    homeUnderRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
-      <div className='min-h-screen'>
+      <div className='h-screen'>
         {scrolled ? (
           <Navbar />
         ) : (
           <nav
-            ref={navbarRef}
             className={`fixed top-0 left-0 w-full flex flex-row items-center justify-end gap-16 text-white font-thin text-xl px-20 py-8 right-0 transition-all duration-500 ease-in-out ${
               scrolled ? 'bg-black/90 text-gray-200 py-6 shadow-lg' : 'bg-transparent text-white'
             }`}

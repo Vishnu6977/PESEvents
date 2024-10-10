@@ -5,7 +5,6 @@ export default {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        karantina: ['Karantina', 'sans-serif'],
       },
     },
   },
