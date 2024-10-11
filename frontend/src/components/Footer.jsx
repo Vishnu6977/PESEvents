@@ -8,8 +8,8 @@ const Footer = () => {
             <p className='low:text-lg max-lg:hidden'>© PESEvents all rights reserved</p>
         </div>
         <div>
-            <h2 className='low:hidden lg:flex lg:text-2xl xl:text-3xl'>Quick Links</h2>
-            <div className='low:hidden lg:flex flex-row gap-10 lg:text-lg xl:text-xl pt-4 cursor:pointer'>
+            <h2 className='low:hidden lg:flex lg:text-2xl'>Quick Links</h2>
+            <div className='low:hidden lg:flex flex-row gap-10 lg:text-lg pt-4 cursor:pointer'>
                 <p className='cursor-pointer'>Home</p>
                 <p className='cursor-pointer'>Events</p>
                 <p className='cursor-pointer'>Clubs</p>
@@ -17,8 +17,8 @@ const Footer = () => {
                 <p className='cursor-pointer'>Log In</p>
                 <p className='cursor-pointer'>Sign Up</p>
             </div>
-            <h2 className='low:text-2xl xl:text-3xl pt-10 max-lg:text-center '>Contact Us</h2>
-            <div className='text-center flex low:flex-col lg:flex-row low:gap-4 lg:gap-10 lg:text-l xl:text-xl pt-4 low:pb-12 lg:pb-0'>
+            <h2 className='low:text-2xl pt-10 max-lg:text-center'>Contact Us</h2>
+            <div className='text-center flex low:flex-col lg:flex-row low:gap-4 lg:gap-10 lg:text-lg pt-4 low:pb-12 lg:pb-0'>
                 <p>pesevents@gmail.com</p>
                 <p>+91 9632109324</p>
                 <p>+91 9632109324</p>
