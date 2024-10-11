@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Lalezar&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
 .bob {
     animation: bobbing 5s ease-in-out infinite; /* 1s for the bobbing, 4s pause */
 }
@@ -17,3 +21,18 @@
     }
 }
 
+.btn-clr {
+    background: linear-gradient(60deg, #901aa8, #4121b7);
+}
+
+.btn-clr-2 {
+    background: linear-gradient(60deg, #7720BB, #af5bd6);
+}
+
+.orgteambg {
+    background: linear-gradient(60deg, #291C4F, #4E20D0);
+}
+
+.footerbg {
+    background: linear-gradient(150deg, #480B37, #36006C);
+}
