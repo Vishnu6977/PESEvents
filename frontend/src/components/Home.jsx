@@ -31,7 +31,7 @@ const Home = () => {
     <>
       <div className='h-screen'>
         <nav
-          className={`sm:hidden lg:flex z-10 fixed top-0 left-0 w-full flex flex-row items-center justify-between px-20 py-6 transition-colors duration-300 ease-in-out ${scrolled ? 'bg-black text-white' : 'bg-transparent text-white'
+          className={`low:hidden lg:flex z-10 fixed top-0 left-0 w-full flex flex-row items-center justify-between px-20 py-6 transition-colors duration-300 ease-in-out ${scrolled ? 'bg-black text-white' : 'bg-transparent text-white'
             }`}
         >
           {scrolled ? <img src='logo.png' className='h-10' alt='Logo' /> : <><h1></h1></>}
@@ -60,14 +60,17 @@ const Home = () => {
 
         
 
-        <div className='flex flex-row items-center sm:justify-center lg:justify-between mx-20 pt-[30vh]'>
+        <div className='flex flex-row items-center low:justify-center lg:justify-between mx-20 low:pt-[35vh] lg:pt-[30vh]'>
           <div className='text-white font-thin lg:text-lg xl:text-xl max-w-[70vh]'>
             <img src='logo.png' className='lg:h-32 xl:h-40 mb-16' alt='logo' />
-            <p className='sm:text-center lg:text-left'>
-              Whether you're organizing a PES event or attending one, our platform guarantees a smooth, efficient experience. Finding and registering for events has never been easier. We're here to simplify event management for everyone.
+            <p className='low:hidden lg:flex text-left'>
+              Whether you're organizing a PES event or attending one, our platform guarantees a lowooth, efficient experience. Finding and registering for events has never been easier. We're here to simplify event management for everyone.
+            </p>
+            <p className=' lg:hidden text-center'>
+              Events of PES
             </p>
           </div>
-          <div className='sm:hidden lg:flex'>
+          <div className='low:hidden lg:flex'>
             <img src='lorem.png' alt='image' className='lg:w-[55vh] xl:w-[70vh]' />
           </div>
         </div>
