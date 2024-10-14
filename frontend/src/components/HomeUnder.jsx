@@ -28,7 +28,7 @@ const HomeUnder = () => {
 
       <div className='flex flex-col items-center low:pt-[10vh] lg:pt-[19vh] xl:pt-[17vh]'>
         <h1 className='font-thin low:text-4xl lg:text-6xl pb-20'>Featured Events</h1>
-        <div className='flex low:flex-col lg:flex-row gap-10'>
+        <div className='flex low:flex-col lg:flex-row lg:gap-2 xl:gap-10'>
           {eventData.map((Event, index) => (
             <EventCard key={index} image={Event.image} title={Event.title} description={Event.description} />
           ))}
@@ -40,8 +40,8 @@ const HomeUnder = () => {
           <h1 className='font-lale text-white low:text-4xl lg:text-6xl'>Interested in Clubs/Events?</h1>
           <p className='text-white text-xl font-thin pt-6'>Get to know about any Event/Club now!</p>
           <div className='flex flex-row gap-10'>
-            <button className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white'>Events</button>
-            <button className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white'>Clubs</button>
+            <button className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Events</button>
+            <button className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Clubs</button>
           </div>
       </div>
 
@@ -78,7 +78,7 @@ const HomeUnder = () => {
       <div className='flex flex-col items-center justify-center orgteambg h-[55vh] mb-24 p-4 text-center'>
           <h1 className='font-lale text-white low:text-4xl lg:text-6xl'>Part of an Organising Team?</h1>
           <p className='text-white text-xl font-thin pt-6'>Get your Event/Club onto our site today!</p>
-          <button className='bg-white rounded-xl py-4 px-6 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white'>Get Started</button>
+          <button className='bg-white rounded-xl py-4 px-6 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Get Started</button>
       </div>
 
         
