@@ -2,7 +2,7 @@ import React from 'react'
 
 const EventCard = ({image, title, description}) => {
     return (
-      <div className=' rounded-3xl min-h-[35vw] low:w-[35vh] lg:w-[25vw] flex flex-col bg-white shadow-xl overflow-hidden font-thin'>
+      <div className='border border-[#C5C5C5] rounded-3xl min-h-[35vw] low:w-[35vh] lg:w-[28vw] flex flex-col bg-white shadow-xl overflow-hidden font-thin'>
         <img src={image} alt='event' className='low:h-[20vh] lg:h-[15vw]' />
         <div className='p-6'>
           <h2 className='low:text-2xl lg:text-4xl'>{title}</h2>

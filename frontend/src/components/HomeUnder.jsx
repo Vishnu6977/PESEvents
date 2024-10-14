@@ -21,14 +21,23 @@ const HomeUnder = () => {
       title: 'Chords’24',
       description: 'Ninaada invites you to Chords’24, taking place on 30th October.'
     },
-
   ]
 
   return (
-    <div className='bg-[#ededed] h-full'>
+    <div className='bg-[#fff] h-full'>
 
-      <div className='flex flex-col items-center low:pt-[10vh] lg:pt-[19vh] xl:pt-[17vh] pb-16'>
-        <h1 className='font-marv low:text-4xl lg:text-6xl pb-12'>What We Offer</h1>  
+      <div className='flex flex-col items-center low:pt-[10vh] lg:pt-[19vh] xl:pt-[17vh]'>
+        <h1 className='font-thin low:text-4xl lg:text-6xl pb-20'>Featured Events</h1>
+        <div className='flex low:flex-col lg:flex-row gap-10'>
+          {eventData.map((Event, index) => (
+            <EventCard key={index} image={Event.image} title={Event.title} description={Event.description} />
+          ))}
+        </div>
+      </div>
+
+
+      <div className='flex flex-col items-center low:pt-[10vh] lg:pt-[19vh] xl:pt-[17vh] pb-24'>
+        <h1 className='font-thin low:text-4xl lg:text-6xl pb-12'>What We Offer</h1>  
         <div className='flex low:flex-col lg:flex-row items-start justify-between gap-4 font-thin low:text-xl lg:text-2xl low:mx-4 lg:mx-0'>
           <div className='max-w-[70vh]'>
             <h2>For Students</h2>
@@ -52,16 +61,6 @@ const HomeUnder = () => {
               <p className='low:text-sm lg:text-lg'>Provides a user-friendly way for individuals to learn about the club and its activities, fostering a deeper understanding of what the club does and its benefits.</p>
             </div>
           </div>
-        </div>
-      </div>
-        
-
-      <div className='flex flex-col items-center pb-24'>
-        <h1 className='font-marv low:text-4xl lg:text-6xl pb-20'>Featured Events</h1>
-        <div className='flex low:flex-col lg:flex-row gap-10'>
-          {eventData.map((Event, index) => (
-            <EventCard key={index} image={Event.image} title={Event.title} description={Event.description} />
-          ))}
         </div>
       </div>
 
