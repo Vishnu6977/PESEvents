@@ -32,22 +32,22 @@ const HomeUnder = () => {
         <div className='flex low:flex-col lg:flex-row items-start justify-between gap-4 font-thin low:text-xl lg:text-2xl low:mx-4 lg:mx-0'>
           <div className='max-w-[70vh]'>
             <h2>For Students</h2>
-            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] flex flex-col justify-center bg-white'>
+            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] min-h-[210px] flex flex-col justify-center bg-white'>
               <p className='pb-2'>Easier registration process and Event Awareness</p>
               <p className='low:text-sm lg:text-lg'>PESEvents is your centralized platform for all PES events. Stay informed about upcoming events, ensuring you never miss an opportunity to participate.</p>
             </div>
-            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] flex flex-col justify-center bg-white'>
+            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] min-h-[210px] flex flex-col justify-center bg-white'>
               <p className='pb-2'>Learn about any PES Event or Club, also see a history of Events</p>
               <p className='low:text-sm lg:text-lg'>Access comprehensive information about any PES event or club, including their history, gallery, and much more, all in one place.</p>
             </div>
           </div>
           <div className='max-w-[70vh]'>
           <h2>For Clubs</h2>
-            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] flex flex-col justify-center bg-white'>
+            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] min-h-[210px] flex flex-col justify-center bg-white'>
               <p className='pb-2'>Streamlined Registrations and Statistics</p>
               <p className='low:text-sm lg:text-lg'>Our easy registration process handles the complexities for you. We also provide feedback and statistics on interest levels and general opinions about the club.</p>
             </div>
-            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] flex flex-col justify-center bg-white'>
+            <div className='border border-black rounded-xl px-4 py-4 mt-4 h-[25vh] min-h-[210px] flex flex-col justify-center bg-white'>
               <p className='pb-2'>Easier Marketing/PR and a recorded History of the Club </p>
               <p className='low:text-sm lg:text-lg'>Provides a user-friendly way for individuals to learn about the club and its activities, fostering a deeper understanding of what the club does and its benefits.</p>
             </div>
