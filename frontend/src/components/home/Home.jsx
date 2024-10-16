@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import HomeUnder from './HomeUnder';
 import './home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const homeUnderRef = useRef(null);
@@ -52,9 +53,9 @@ const Home = () => {
               Timeline
               <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-current'></span>
             </div>
-            <button className='navbtn rounded-2xl px-5 py-3 shadow-lg'>
+            <Link to='/getstarted' className='navbtn rounded-2xl px-5 py-3 shadow-lg'>
               Get Started
-            </button>
+            </Link>
           </div>
         </nav>
         

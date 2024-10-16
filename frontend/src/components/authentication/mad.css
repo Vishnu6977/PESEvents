@@ -1,0 +1,9 @@
+.btn-clr {
+    background: linear-gradient(60deg, #901aa8, #4121b7);
+}
+
+.btn-clr:hover {
+    background: white;
+    color: black;
+    transition-duration: 0.3s;
+}
