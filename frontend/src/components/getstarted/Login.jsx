@@ -4,7 +4,7 @@ import './mad.css'
 const Login = () => {
   return (
     <div className='flex flex-col items-center pt-[8vh]'>
-        <img src='logo.png' className='low:h-[5vh] lg:h-[7vh]' />
+        <img src='logo.png' alt='logo' className='low:h-[5vh] lg:h-[7vh]' />
         <div className='h-[70vh] w-[80vw] bg-white rounded-[2rem] mt-[5vh] flex lg:flex-row items-center justify-evenly'>
             <div className='hidden lg:flex flex-col items-center justify-center lg:text-3xl xl:text-[2.5rem] font-marv w-[42vw]'>
                 <h1>Use PESEvents without Logging In</h1>

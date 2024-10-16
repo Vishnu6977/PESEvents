@@ -83,7 +83,7 @@ const Home = () => {
         <div className='absolute bottom-0 left-0 right-0 flex flex-row items-center justify-center p-4'>
           <button onClick={scrollToHomeUnder} className='text-white font-thin bob flex flex-row items-center'>
             See More
-            <img src='downarrow.png' className='h-[0.4rem] pl-2' />
+            <img src='downarrow.png' alt='downarrow' className='h-[0.4rem] pl-2' />
           </button>
         </div>
 
