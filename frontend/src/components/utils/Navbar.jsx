@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <nav className='fixed right-0 w-full bg-black h-[12vh] flex flex-row items-center justify-between'>
-        <img src='logo.png' className='h-10 px-20' />
+        <img src='logo.png' alt='logo' className='h-10 px-20' />
         <div className='flex flex-row items-center justify-end gap-16 text-white font-thin text-xl px-20 py-6'>
             <div className='cursor-pointer group transition duration-300 hover:cursor-pointer text-white'>
               Home

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='low:h-full lg:h-[40vh] footerbg flex low:flex-col lg:flex-row justify-between items-center text-white p-16'>
         <div>
-            <img src='logo.png' className='low:h-16 xl:h-24 low:mb-4 lg:mb-16'/>
+            <img src='logo.png' alt='logo' className='low:h-16 xl:h-24 low:mb-4 lg:mb-16'/>
             <p className='low:text-lg max-lg:hidden'>© PESEvents all rights reserved</p>
         </div>
         <div>
