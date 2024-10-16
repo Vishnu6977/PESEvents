@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './components/home/Home';
-import Authenticate from './components/authentication/Authenticate';
+import Login from './components/getstarted/Login';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/getstarted" element={<Authenticate />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </div>
