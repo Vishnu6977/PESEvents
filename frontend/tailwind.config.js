@@ -11,6 +11,7 @@ export default {
     },
     screens: {
       'low': '320px',
+      'mm' : '375px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
