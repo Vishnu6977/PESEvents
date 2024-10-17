@@ -35,24 +35,24 @@ const Home = () => {
           className={`low:hidden lg:flex z-10 fixed top-0 left-0 w-full flex flex-row items-center justify-between px-20 py-6 transition-colors duration-300 ease-in-out ${scrolled ? 'bg-black text-white' : 'bg-transparent text-white'
             }`}
         >
-          {scrolled ? <img src='logo.png' className='h-10' alt='Logo' /> : <><h2></h2></>}
+          {scrolled ? <Link to='/'> <img src='logo.png' className='h-10' alt='Logo' /> </Link> : <><h2></h2></>}
           <div className='flex flex-row items-center justify-end gap-16 lg:text-md xl:text-xl'>
-            <div className='cursor-pointer group transition duration-300'>
+            <Link to='/' className='cursor-pointer group transition duration-300'>
               Home
               <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-current'></span>
-            </div>
-            <div className='cursor-pointer group transition duration-300'>
+            </Link>
+            <Link to='/upcoming' className='cursor-pointer group transition duration-300'>
               Events
               <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-current'></span>
-            </div>
-            <div className='cursor-pointer group transition duration-300'>
+            </Link>
+            <Link className='cursor-pointer group transition duration-300'>
               Clubs
               <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-current'></span>
-            </div>
-            <div className='cursor-pointer group transition duration-300'>
+            </Link>
+            <Link className='cursor-pointer group transition duration-300'>
               Timeline
               <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-current'></span>
-            </div>
+            </Link>
             <Link to='/login' className='navbtn rounded-2xl px-5 py-3 shadow-lg'>
               Get Started
             </Link>

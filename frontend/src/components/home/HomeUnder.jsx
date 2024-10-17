@@ -2,27 +2,12 @@ import React from 'react'
 import Footer from '../utils/Footer'
 import './home.css'
 import EventCard from '../utils/EventCard'
+import eventData3 from '../utils/EventData3.js'
 
 const HomeUnder = () => {
 
-  const eventData = [
-    {
-      image: './chords.jpg',
-      title: 'Chords’24',
-      description: 'Ninaada invites you to Chords’24, taking place on 30th October.'
-    },
-    {
-      image: './chords.jpg',
-      title: 'Chords’24',
-      description: 'Ninaada invites you to Chords’24, taking place on 30th October.'
-    },
-    {
-      image: './chords.jpg',
-      title: 'Chords’24',
-      description: 'Ninaada invites you to Chords’24, taking place on 30th October.'
-    },
-  ]
-
+  const eventData = eventData3
+  
   return (
     <div className='bg-[#fff] h-full'>
 

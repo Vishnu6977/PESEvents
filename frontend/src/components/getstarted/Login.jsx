@@ -1,11 +1,17 @@
 import React from 'react'
 import './mad.css'
+import Navbar from '../utils/Navbar'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
+
   return (
     <div className='flex flex-col items-center pt-[8vh]'>
-        <img src='logo.png' alt='logo' className='low:h-[5vh] lg:h-[7vh]' />
-        <div className='h-[70vh] w-[80vw] bg-white rounded-[2rem] mt-[5vh] flex lg:flex-row items-center justify-evenly'>
+
+        <Navbar />
+
+        <Link to='/' > <img src='logo.png' alt='logo' className='lg:hidden low:h-[5vh] lg:h-[7vh]' /> </Link>
+        <div className='h-[70vh] w-[80vw] bg-white rounded-[2rem] low:mt-[5vh] lg:mt-[15vh] flex lg:flex-row items-center justify-evenly'>
             <div className='hidden lg:flex flex-col items-center justify-center lg:text-3xl xl:text-[2.5rem] font-marv w-[42vw]'>
                 <h1>Use PESEvents without Logging In</h1>
                 <button className='text-white lg:text-xl xl:text-2xl btn-clr rounded-3xl px-6 py-2 mt-[2vh] xl:mt-[4vh] border border-white hover:border-black'>Start Browsing</button>
