@@ -1,0 +1,15 @@
+.logo-clr {
+    background: linear-gradient(to right, #7013c8, #6300e8);
+    background-clip: text; /* Ensures compatibility */
+    color: transparent; /* Make the text transparent to show the gradient */
+}
+
+.input-width{
+    width: 90%;
+}
+
+.btn-clr {
+    background: linear-gradient(60deg, #4121b7, #901aa8);
+}
+
+
