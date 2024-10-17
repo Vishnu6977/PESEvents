@@ -14,7 +14,7 @@ const Login = () => {
         <div className='h-[70vh] w-[80vw] bg-white rounded-[2rem] low:mt-[5vh] lg:mt-[15vh] flex lg:flex-row items-center justify-evenly'>
             <div className='hidden lg:flex flex-col items-center justify-center lg:text-3xl xl:text-[2.5rem] font-marv w-[42vw]'>
                 <h1>Use PESEvents without Logging In</h1>
-                <button className='text-white lg:text-xl xl:text-2xl btn-clr rounded-3xl px-6 py-2 mt-[2vh] xl:mt-[4vh] border border-white hover:border-black'>Start Browsing</button>
+                <Link to='/upcoming' className='text-white lg:text-xl xl:text-2xl btn-clr rounded-3xl px-6 py-2 mt-[2vh] xl:mt-[4vh] border border-white hover:border-black'>Start Browsing</Link>
                 <h1 className='pt-[5vh] xl:pt-[7vh]'>Organising an Event?</h1>
                 <p className='lg:text-lg xl:text-xl pt-[1vh] text-gray-500'>This is only for Club/Event Organising Teams.</p>
                 <button className='text-white lg:text-xl xl:text-2xl btn-clr rounded-3xl px-8 py-2 mt-[2vh] xl:mt-[4vh] border border-white hover:border-black'>Get Started</button>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -10,12 +11,12 @@ const Footer = () => {
         <div>
             <h2 className='low:hidden lg:flex lg:text-2xl'>Quick Links</h2>
             <div className='low:hidden lg:flex flex-row gap-10 lg:text-lg pt-4 cursor:pointer'>
-                <p className='cursor-pointer'>Home</p>
-                <p className='cursor-pointer'>Events</p>
-                <p className='cursor-pointer'>Clubs</p>
-                <p className='cursor-pointer'>Timeline</p>
-                <p className='cursor-pointer'>Log In</p>
-                <p className='cursor-pointer'>Sign Up</p>
+                <Link to='/' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer'>Home</Link>
+                <Link to='/upcoming' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer'>Events</Link>
+                <Link to='/clubs' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer'>Clubs</Link>
+                <Link to='/timeline' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer'>Timeline</Link>
+                <Link to='/login' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer'>Log In</Link>
+                <Link to='/login' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer'>Sign Up</Link>
             </div>
             <h2 className='low:text-2xl pt-10 max-lg:text-center'>Contact Us</h2>
             <div className='text-center flex low:flex-col lg:flex-row low:gap-4 lg:gap-10 lg:text-lg pt-4 low:pb-12 lg:pb-0'>

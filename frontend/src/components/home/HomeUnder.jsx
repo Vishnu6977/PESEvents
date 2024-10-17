@@ -3,6 +3,7 @@ import Footer from '../utils/Footer'
 import './home.css'
 import EventCard from '../utils/EventCard'
 import eventData3 from '../utils/EventData3.js'
+import { Link } from 'react-router-dom'
 
 const HomeUnder = () => {
 
@@ -25,8 +26,8 @@ const HomeUnder = () => {
           <h1 className='font-lale text-white low:text-4xl lg:text-6xl'>Interested in Clubs/Events?</h1>
           <p className='text-white text-xl font-thin pt-6'>Get to know about any Event/Club now!</p>
           <div className='flex flex-row gap-10'>
-            <button className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Events</button>
-            <button className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Clubs</button>
+            <Link to='/upcoming' onClick={() => window.scrollTo(0, 0)} className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Events</Link>
+            <Link to='/clubs' className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Clubs</Link>
           </div>
       </div>
 
