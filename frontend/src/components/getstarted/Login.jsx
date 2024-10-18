@@ -2,6 +2,7 @@ import React from 'react'
 import './mad.css'
 import Navbar from '../utils/Navbar'
 import { Link } from 'react-router-dom'
+import InputComponent from '../utils/InputComponent'
 
 const Login = () => {
 
@@ -17,7 +18,7 @@ const Login = () => {
                 <Link to='/upcoming' className='text-white lg:text-xl xl:text-2xl btn-clr rounded-3xl px-6 py-2 mt-[2vh] xl:mt-[4vh] border border-white hover:border-black'>Start Browsing</Link>
                 <h1 className='pt-[5vh] xl:pt-[7vh]'>Organising an Event?</h1>
                 <p className='lg:text-lg xl:text-xl pt-[1vh] text-gray-500'>This is only for Club/Event Organising Teams.</p>
-                <button className='text-white lg:text-xl xl:text-2xl btn-clr rounded-3xl px-8 py-2 mt-[2vh] xl:mt-[4vh] border border-white hover:border-black'>Get Started</button>
+                <Link to='/login-clubs' className='text-white lg:text-xl xl:text-2xl btn-clr rounded-3xl px-8 py-2 mt-[2vh] xl:mt-[4vh] border border-white hover:border-black'>Get Started</Link>
             </div>
             <div className='hidden lg:flex flex-col items-center justify-center'>
                 <div className='bg-black w-[1.5px] h-[23vh]'></div>

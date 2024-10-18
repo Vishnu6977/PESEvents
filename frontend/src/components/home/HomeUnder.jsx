@@ -27,7 +27,7 @@ const HomeUnder = () => {
           <p className='text-white text-xl font-thin pt-6'>Get to know about any Event/Club now!</p>
           <div className='flex flex-row gap-10'>
             <Link to='/upcoming' onClick={() => window.scrollTo(0, 0)} className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Events</Link>
-            <Link to='/clubs' className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Clubs</Link>
+            <Link to='/clubs' onClick={() => window.scrollTo(0, 0)} className='bg-white rounded-xl py-4 px-8 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Clubs</Link>
           </div>
       </div>
 
@@ -64,7 +64,7 @@ const HomeUnder = () => {
       <div className='flex flex-col items-center justify-center orgteambg h-[55vh] mb-24 p-4 text-center'>
           <h1 className='font-lale text-white low:text-4xl lg:text-6xl'>Part of an Organising Team?</h1>
           <p className='text-white text-xl font-thin pt-6'>Get your Event/Club onto our site today!</p>
-          <button className='bg-white rounded-xl py-4 px-6 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Get Started</button>
+          <Link to='/login-clubs' className='bg-white rounded-xl py-4 px-6 text-black font-sans mt-12 shadow-2xl hover:bg-black hover:text-white transition duration-200'>Get Started</Link>
       </div>
 
         

@@ -6,6 +6,7 @@ import Upcoming from './components/displays/Upcoming';
 import Timeline from './components/displays/Timeline';
 import Events from './components/displays/Events';
 import Clubs from './components/displays/Clubs';
+import Clublog from './components/SignUpLogin/Clublog';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/login-clubs" element={<Clublog />} />
           <Route path="/upcoming" element={<Upcoming />} />
           <Route path="/events" element={<Events />} />
           <Route path="/clubs" element={<Clubs />} />
