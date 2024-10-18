@@ -2,6 +2,7 @@ import express from 'express';
 import connectDB from './config/db.js';
 import path from 'path';
 import dotenv from 'dotenv';
+import routes from './routes/routes.js';
 
 const app = express();
 dotenv.config();
@@ -10,9 +11,7 @@ connectDB();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('API is running...');
-});
+app.use('/backend/api/', routes)
 
 const __dirname = path.resolve()
 
