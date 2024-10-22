@@ -11,15 +11,15 @@ const Drawer = () => {
   return (
     <>
       <button className="fixed p-2 bg-black rounded-full h-12 w-12 right-[5vw] top-[5vh] lg:hidden" onClick={toggleDrawer}>
-        <img src='./hamb.png' className=''/>
+        <img src='./hamb.png' className=''/> 
       </button>
 
       <div
-        className={`z-20 fixed top-0 right-0 w-64 h-full bg-gray-800 text-white p-5 transition-transform duration-300 ${
+        className={`z-20 fixed top-0 right-0 w-64 h-full bg-gray-900 text-white p-5 transition-transform duration-300 ${
             isOpen ? 'transform translate-x-0' : 'transform translate-x-full'
           }`}  
       >
-        <img src='./logo.png' className='mt-6 h-8 mb-8' />
+        <Link to='/'> <img src='./logo.png' className='mt-6 h-8 mb-8' /> </Link>
         <button className='absolute top-[5vh] right-[5vw] h-12 w-12' onClick={toggleDrawer}>
             <img src='./x.png' className='h-4 ml-4'/>
         </button>

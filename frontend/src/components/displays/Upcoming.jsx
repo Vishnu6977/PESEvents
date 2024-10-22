@@ -15,7 +15,7 @@ const Upcoming = () => {
         <Navbar />
         <div className='groundoftheback'>
             <div className='flex flex-row items-center justify-between text-white font-kara pt-[20vh] text-[3rem] lg:text-[5rem] mx-[5vw]'>
-                <h1>Upcoming Events</h1>
+                <h1 className='max-lg:-mt-[30vh] max-lg:ml-4'>Upcoming Events</h1>
                 <div className='h-[6vh] w-[6vh] lg:h-[8vh] lg:w-[8vh] bg-black bg-opacity-40 rounded-2xl mt-2 lg:mt-6 hover:cursor-pointer'> 
                 
                 </div>
