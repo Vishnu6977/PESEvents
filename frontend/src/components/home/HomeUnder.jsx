@@ -34,7 +34,7 @@ const HomeUnder = () => {
 
       <div className='flex flex-col items-center low:pt-[8vh] lg:pt-[17vh] xl:pt-[15vh] pb-24'>
         <h1 className='font-thin low:text-4xl lg:text-6xl pb-12'>What We Offer</h1>  
-        <div className='flex low:flex-col lg:flex-row items-start justify-between gap-4 font-thin low:text-xl lg:text-2xl low:mx-4 lg:mx-0'>
+        <div className='flex low:flex-col lg:flex-row items-start justify-between gap-4 vp:font-thin low:text-xl lg:text-2xl low:mx-4 lg:mx-0'>
           <div className='max-w-[70vh]'>
             <h2>For Students</h2>
             <div className='border border-[#C5C5C5] rounded-xl px-4 py-4 mt-4 h-[25vh] min-h-[210px] flex flex-col justify-center bg-white'>
