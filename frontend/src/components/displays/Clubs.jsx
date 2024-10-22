@@ -2,13 +2,13 @@ import React from 'react'
 import './displays.css'
 import Navbar from '../utils/Navbar'
 import Footer from '../utils/Footer'
-import EventCard from '../utils/EventCard'
-import eventData6 from '../utils/EventData6.js'
+import ClubCard from '../utils/ClubCard'
+import clubData2 from '../utils/ClubData2'
 import { Link } from 'react-router-dom'
 
 const Clubs = () => {
 
-    const eventData = eventData6
+    const clubData = clubData2
 
   return (
     <div>
@@ -21,8 +21,8 @@ const Clubs = () => {
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-[5vw] mt-[2rem] gap-[3vw] place-items-center'>
-                {eventData.map((Event, index) => (
-                    <EventCard key={index} image={Event.image} title={Event.title} description={Event.description} />
+                {clubData.map((Event, index) => (
+                    <ClubCard key={index} image={Event.logo} title={Event.name} description={Event.about} />
                 ))}
             </div>
             <div className='flex flex-col lg:flex-row items-center justify-center gap-[5vw] py-[15vh]'>

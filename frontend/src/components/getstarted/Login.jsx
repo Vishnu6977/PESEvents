@@ -2,7 +2,6 @@ import React from 'react'
 import './mad.css'
 import Navbar from '../utils/Navbar'
 import { Link } from 'react-router-dom'
-import InputComponent from '../utils/InputComponent'
 
 const Login = () => {
 
