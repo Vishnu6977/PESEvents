@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import HomeUnder from './HomeUnder';
 import './home.css';
 import { Link } from 'react-router-dom';
+import Drawer from '../utils/Drawer';
 
 const Home = () => {
   const homeUnderRef = useRef(null);
@@ -31,6 +32,7 @@ const Home = () => {
   return (
     <>
       <div className='h-screen'>
+        <Drawer />
         <nav
           className={`low:hidden lg:flex z-10 fixed top-0 left-0 w-full flex flex-row items-center justify-between px-20 py-6 transition-colors duration-300 ease-in-out ${scrolled ? 'bg-black text-white' : 'bg-transparent text-white'
             }`}
