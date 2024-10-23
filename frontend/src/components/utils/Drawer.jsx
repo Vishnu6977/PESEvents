@@ -11,7 +11,7 @@ const Drawer = () => {
   return (
     <>
       <button className="fixed p-2 bg-black rounded-full h-12 w-12 right-[5vw] top-[5vh] lg:hidden" onClick={toggleDrawer}>
-        <img src='./hamb.png' className=''/> 
+        <img src='/hamb.png' className=''/> 
       </button>
 
       <div
@@ -19,9 +19,9 @@ const Drawer = () => {
             isOpen ? 'transform translate-x-0' : 'transform translate-x-full'
           }`}  
       >
-        <Link to='/'> <img src='./logo.png' className='mt-6 h-8 mb-8' /> </Link>
+        <Link to='/'> <img src='/logo.png' className='mt-6 h-8 mb-8' /> </Link>
         <button className='absolute top-[5vh] right-[5vw] h-12 w-12' onClick={toggleDrawer}>
-            <img src='./x.png' className='h-4 ml-4'/>
+            <img src='/x.png' className='h-4 ml-4'/>
         </button>
         <div className='flex flex-col items-start justify-end gap-4 lg:text-md xl:text-xl font-thin'>
             <Link to='/' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer group transition duration-300'>

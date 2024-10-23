@@ -16,7 +16,7 @@ const ClubPage = () => {
   return (
     <div className='bg-white'>
       <Navbar />
-      <div className='pt-[11vh]'>
+      <div className='lg:pt-[11vh]'>
         <div className='absolute bg-white h-[25vh] w-[25vh] rounded-full ml-[15vw] mt-[18vh] z-2'> <img src={clubData.logo} className='h-[24vh] w-[24vh] pl-[1vh] pt-[0.5vh]' /> </div>
         <img src={clubData.banner}  className='w-screen h-[30vh] -z-2' />
         <p className='text-3xl font-thin absolute text-black right-[10vw] mt-[3vh]'>{clubData.tag}</p>
