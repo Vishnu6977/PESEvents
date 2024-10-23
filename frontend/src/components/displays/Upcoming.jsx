@@ -20,7 +20,7 @@ const Upcoming = () => {
                 
                 </div>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-[5vw] mt-[2rem] gap-[3vw] place-items-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-[5vw] mt-[2rem] gap-[5vw] place-items-center'>
                 {eventData.map((Event, index) => (
                     <EventCard key={index} image={Event.image} title={Event.title} description={Event.description} />
                 ))}

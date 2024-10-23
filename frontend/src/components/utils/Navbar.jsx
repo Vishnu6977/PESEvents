@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
     <nav
     className='low:hidden lg:flex z-10 fixed top-0 left-0 w-full flex flex-row items-center justify-between px-20 py-6 transition-colors duration-300 ease-in-out bg-black text-white'>
-    <Link to='/' onClick={() => window.scrollTo(0, 0)}> <img src='logo.png' className='h-10' alt='Logo' /> </Link>
+    <Link to='/' onClick={() => window.scrollTo(0, 0)}> <img src='/logo.png' className='h-10' alt='Logo' /> </Link>
     <div className='flex flex-row items-center justify-end gap-16 lg:text-md xl:text-xl font-thin'>
       <Link to='/' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer group transition duration-300'>
         Home

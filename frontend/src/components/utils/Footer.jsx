@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='low:h-full lg:h-[40vh] footerbg flex low:flex-col lg:flex-row justify-between items-center text-white p-16'>
         <div>
-            <img src='logo.png' alt='logo' className='low:h-16 xl:h-20 low:mb-4 lg:mb-16'/>
+            <img src='/logo.png' alt='logo' className='low:h-16 xl:h-20 low:mb-4 lg:mb-16'/>
             <p className='low:text-md max-lg:hidden'>© PESEvents all rights reserved</p>
         </div>
         <div>
@@ -31,10 +31,10 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex low:flex-row lg:flex-col items-center justify-center gap-6'>
-            <img src='Github.png' alt='Github' className='low:h-8 xl:h-11 cursor-pointer'/>
-            <img src='LinkedIn.png' alt='LinkedIn' className='low:h-6 xl:h-7 cursor-pointer rounded'/>
-            <img src='Instagram.png' alt='Instagram' className='low:h-6 xl:h-8 cursor-pointer'/>
-            <img src='Discord.png' alt='Discord' className='low:h-6 xl:h-8 cursor-pointer' />
+            <img src='/Github.png' alt='Github' className='low:h-8 xl:h-11 cursor-pointer'/>
+            <img src='/LinkedIn.png' alt='LinkedIn' className='low:h-6 xl:h-7 cursor-pointer rounded'/>
+            <img src='/Instagram.png' alt='Instagram' className='low:h-6 xl:h-8 cursor-pointer'/>
+            <img src='/Discord.png' alt='Discord' className='low:h-6 xl:h-8 cursor-pointer' />
         </div>
         <p className='low:text-sm lg:hidden pt-10 text-center'>© PESEvents all rights reserved</p>
     </div>
