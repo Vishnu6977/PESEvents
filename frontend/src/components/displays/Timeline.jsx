@@ -12,7 +12,7 @@ const Timeline = () => {
         <Navbar />
 
         <div className="flex-grow text-white">
-          <div className="vp:text-center max-vp:pt-[5vh] max-vp:pl-6 pt-[20vh] pb-32">
+          <div className="vp:text-center max-vp:pt-[15vh] max-vp:pl-6 pt-[20vh] pb-24">
             <p className="text-5xl md:text-8xl font-kara">The Events Timeline</p>
           </div>
           <Timelinedate Date="October, 2024" />

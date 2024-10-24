@@ -18,7 +18,7 @@ const ClubPage = () => {
   return (
     <div className='bg-white'>
       <Navbar />
-      <div className='lg:pt-[12vh]'>
+      <div className='pt-[10vh] lg:pt-[12vh]'>
         <div className='absolute bg-white h-[25vh] w-[25vh] rounded-full ml-[10vw] mt-[18vh] z-2 hidden lg:flex items-center justify-center'> <img src={clubData.logo} alt='club logo' className='h-[93%] w-[93%] bg-black rounded-full object-cover' /> </div>
         <div className='h-[30vh] -z-2 flex items-center justify-center'> <img src={clubData.banner} alt='club banner'  className='h-[30vh] w-full max-w-screen object-cover' /> </div>
         <div className='text-xl lg:text-3xl lg:font-thin lg:absolute text-black mt-[4vh] lg:right-[10vw] flex flex-col justify-center items-center'>
