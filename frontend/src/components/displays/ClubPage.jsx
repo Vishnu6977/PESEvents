@@ -1,13 +1,12 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import Navbar from '../utils/Navbar'
 import Footer from '../utils/Footer'
-import clubData2 from '../utils/ClubData2'
-import eventData6 from '../utils/EventData6'
+import clubData2 from '../utils/ClubData2.js'
+import eventData6 from '../utils/EventData6.js'
 import EventCard from '../utils/EventCard'
-import clubTags from '../utils/ClubTags'
+import clubTags from '../utils/ClubTags.js'
 
 const ClubPage = () => {
 
