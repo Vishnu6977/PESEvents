@@ -55,7 +55,7 @@ const Drawer = () => {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-50"
+          className="fixed inset-0 z-10 bg-black opacity-50"
           onClick={toggleDrawer}
         ></div>
       )}

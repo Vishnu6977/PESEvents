@@ -45,7 +45,6 @@ const Home = () => {
             </Link>
             
             <div
-              onClick={() => window.scrollTo(0, 0)}
               className='relative cursor-pointer group transition duration-300'
             >
               Events
@@ -54,12 +53,12 @@ const Home = () => {
               <div className='absolute left-0 top-[94%] bg-white shadow-lg h-0 lg:group-hover:h-[6rem] xl:group-hover:h-[6.5rem] transition-all duration-300 delay-[250ms] overflow-hidden'>
                 <ul className='py-2'>
                   <li>
-                    <Link to='/upcoming' className='block px-4 py-2 text-gray-700 hover:bg-gray-100'>
+                    <Link to='/upcoming' onClick={() => window.scrollTo(0, 0)} className='block px-4 py-2 text-gray-700 hover:bg-gray-100'>
                       Upcoming
                     </Link>
                   </li>
                   <li>
-                    <Link to='/events' className='block px-4 py-2 text-gray-700 hover:bg-gray-100'>
+                    <Link to='/events' onClick={() => window.scrollTo(0, 0)} className='block px-4 py-2 text-gray-700 hover:bg-gray-100'>
                       All Events
                     </Link>
                   </li>

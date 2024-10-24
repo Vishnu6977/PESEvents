@@ -16,8 +16,8 @@ const Upcoming = () => {
         <div className='groundoftheback'>
             <div className='flex flex-row items-center justify-between text-white font-kara pt-[20vh] text-[3rem] lg:text-[5rem] mx-[5vw]'>
                 <h1 className='max-lg:-mt-[30vh] max-lg:ml-4'>Upcoming Events</h1>
-                <div className='h-[6vh] w-[6vh] lg:h-[8vh] lg:w-[8vh] bg-black bg-opacity-40 rounded-2xl mt-2 lg:mt-6 hover:cursor-pointer'> 
-                
+                <div className='h-[6vh] w-[6vh] lg:h-[8vh] lg:w-[8vh] bg-black bg-opacity-40 rounded-2xl mt-2 lg:mt-6 hover:cursor-pointer flex items-center justify-center'> 
+                    <img src='/filters.png' className='h-[5vh]' />
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-[5vw] mt-[2rem] gap-[5vw] place-items-center'>
