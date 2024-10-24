@@ -32,7 +32,9 @@ const Home = () => {
   return (
     <>
       <div className='h-screen'>
-        <Drawer />
+        <div className='fixed top-[5vh] right-[5vw]'>
+          <Drawer />
+        </div>
         <nav
           className={`low:hidden lg:flex z-10 fixed top-0 left-0 w-full flex flex-row items-center justify-between px-20 py-6 transition-colors duration-300 ease-in-out ${scrolled ? 'bg-black text-white' : 'bg-transparent text-white'
             }`}

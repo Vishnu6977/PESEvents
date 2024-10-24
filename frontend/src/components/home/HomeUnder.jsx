@@ -2,12 +2,12 @@ import React from 'react'
 import Footer from '../utils/Footer'
 import './home.css'
 import EventCard from '../utils/EventCard'
-import eventData3 from '../utils/EventData3.js'
+import eventData from '../utils/EventData.js'
 import { Link } from 'react-router-dom'
 
 const HomeUnder = () => {
 
-  const eventData = eventData3
+  const data = eventData
   
   return (
     <div className='bg-[#fff] h-full'>
@@ -15,8 +15,8 @@ const HomeUnder = () => {
       <div className='flex flex-col items-center low:pt-[10vh] lg:pt-[19vh] xl:pt-[17vh]'>
         <h1 className='vp:font-thin low:text-4xl lg:text-6xl pb-20'>Featured Events</h1>
         <div className='flex low:flex-col lg:flex-row low:gap-10 lg:gap-2 xl:gap-10'>
-          {eventData.map((Event, index) => (
-            <EventCard key={index} image={Event.image} title={Event.title} description={Event.description} />
+          {data.map((Event, index) => (
+            <EventCard key={index} event={Event} />
           ))}
         </div>
       </div>

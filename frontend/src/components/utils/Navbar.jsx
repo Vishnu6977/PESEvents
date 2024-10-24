@@ -52,7 +52,8 @@ const Navbar = () => {
       </Link>
     </div>
   </nav> 
-  <div className='lg:hidden'>
+  <div className='lg:hidden bg-black h-[10vh] fixed w-full flex items-center justify-between pl-8 pr-3'>
+    <Link to='/' onClick={() => window.scrollTo(0, 0)}> <img src='/logo.png' className='h-8' alt='Logo' /> </Link>
     <Drawer />
   </div>
   </>

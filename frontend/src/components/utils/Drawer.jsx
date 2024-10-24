@@ -10,7 +10,7 @@ const Drawer = () => {
 
   return (
     <>
-      <button className="fixed p-2 bg-black rounded-full h-12 w-12 right-[5vw] top-[5vh] lg:hidden" onClick={toggleDrawer}>
+      <button className="p-2 bg-black rounded-full h-12 w-12 lg:hidden" onClick={toggleDrawer}>
         <img src='/hamb.png' className=''/> 
       </button>
 
