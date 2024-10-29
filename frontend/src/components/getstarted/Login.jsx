@@ -1,5 +1,4 @@
 import React from 'react'
-import './mad.css'
 import Navbar from '../utils/Navbar'
 import { Link } from 'react-router-dom'
 

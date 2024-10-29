@@ -3,21 +3,21 @@
 
 
 .bob {
-    animation: bobbing 5s ease-in-out infinite; /* 1s for the bobbing, 4s pause */
+    animation: bobbing 5s ease-in-out infinite; 
 }
 
 @keyframes bobbing {
     0% {
-        transform: translateY(0); /* Start at original position */
+        transform: translateY(0); 
     }
     10% {
-        transform: translateY(-10px); /* Move up at the 10% mark */
+        transform: translateY(-10px); 
     }
     20% {
-        transform: translateY(0); /* Move back down at the 20% mark */
+        transform: translateY(0); 
     }
     100% {
-        transform: translateY(0); /* Stay at the original position (pause) */
+        transform: translateY(0); 
     }
 }
 
@@ -31,20 +31,32 @@
     transition-duration: 0.3s;
 }
 
-.navbtn {
+.btn-clr2 {
+    background-color: black;
+}
+
+.btn-clr2:hover {
     background: white;
     color: black;
     transition-duration: 0.3s;
 }
 
+.navbtn {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    transition-duration: 0.3s;
+}
+
 .navbtn:hover {
-    background: linear-gradient(60deg, #901aa8, #4121b7);
+    background: black;
+    border: 1px solid white;
     color: white;
     transition-duration: 0.3s;
 }
 
 .orgteambg {
-    background: linear-gradient(60deg, #291C4F, #4E20D0);
+    background: linear-gradient(60deg, #3f1c4f, #9c1fd1);
 }
 
 .orgteambg2 {

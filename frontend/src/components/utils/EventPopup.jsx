@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../home/home.css'
 
 const Popup = (prop) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Popup = (prop) => {
     <div>
       <button
         onClick={togglePopup}
-        className='btn-clr rounded-xl low:w-[30vh] lg:w-[22vw] py-2 text-white font-sans shadow-2xl border border-white hover:border-black'
+        className='btn-clr2 rounded-xl low:w-[30vh] lg:w-[22vw] py-2 text-white font-sans shadow-2xl border border-white hover:border-black'
       >
         Learn More
       </button>
