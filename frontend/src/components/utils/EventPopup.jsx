@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 const Popup = (prop) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(prop.event);
-
   const event = prop.event;
 
   const togglePopup = () => {

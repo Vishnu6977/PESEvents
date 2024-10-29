@@ -44,7 +44,10 @@ const ClubPage = () => {
           <div className='w-[0.1rem] bg-black rounded-full'></div>
 
           <div className='lg:max-w-[25vw] text-black flex flex-col items-center lg:items-start lg:justify-start mr-[10vh] ml-[5vh] text-start px-6 py-6'>
-            <h1 className='text-4xl xl:text-5xl lg:font-thin max-lg:hidden'>About</h1>
+            <div className='text-4xl xl:text-5xl lg:font-thin max-lg:hidden'>
+              About
+              <button className='pl-4'>pencil</button>
+            </div>
             <p className='text-xl xl:text-2xl lg:font-thin pt-[5vh] max-lg:hidden'>{clubData.description}</p>
             <h2 className='text-4xl xl:text-5xl lg:font-thin py-[5vh]'>Tags</h2>
 

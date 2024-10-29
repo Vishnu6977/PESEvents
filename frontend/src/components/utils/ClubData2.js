@@ -6,7 +6,7 @@ const clubData2 = [
       tagline: 'Inform, Entertain, Inspire',
       name: 'hopes',
       description: 'We specialise in comprehensive media coverage, capturing the essence of campus life through captivating visuals and compelling audio, including an immersive in house podcast Etcetera-One podcast, a thousand stories.',
-      events: ['Chord'],
+      events: ['Chords'],
       tags: ['Media', 'Photography'],
       contact: ['hopes@gmail.com', '+91 9034092', 'www.hopes-pes.vercel.app']
     },
