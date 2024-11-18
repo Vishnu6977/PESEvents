@@ -7,7 +7,7 @@ const eventSchema = mongoose.Schema({
     },
     description: {
         type: String,
-        required: true,
+        required: false,
     },
     location: {
         type: String,
@@ -31,7 +31,7 @@ const eventSchema = mongoose.Schema({
     },
     upcoming: {
         type: Boolean,
-        required: true,
+        required: false,
     },
     image: {
         type: String,

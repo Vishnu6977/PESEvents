@@ -8,6 +8,7 @@ import Events from './components/displays/Events';
 import Clubs from './components/displays/Clubs';
 import Clublog from './components/SignUpLogin/Clublog';
 import ClubPage from './components/displays/ClubPage';
+import Admin from './components/displays/Admin';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/clubs" element={<Clubs />} />
           <Route path="/clubs/:club" element={<ClubPage />} />
           <Route path="/timeline" element={<Timeline />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </div>

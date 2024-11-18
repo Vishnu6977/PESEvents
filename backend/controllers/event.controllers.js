@@ -10,6 +10,24 @@ export const getEvents = async (req, res) => {
     }
 }
 
+export const searchEvent = async (req, res) => {
+    try {
+        const events = await Event.find({
+            title: { $regex: req.params.title, $options: 'i' } 
+        });
+
+        if (events.length === 0) {
+            return res.status(404).json({ success: false, message: 'No events found' });
+        }
+
+        res.status(200).json({ success: true, data: events });
+    } catch (error) {
+        console.log('Error:', error.message);
+        res.status(500).json({ success: false, message: 'Server Error' });
+    }
+};
+
+
 export const createEvent = async (req, res) => {
     try {
         const event = await Event.create(req.body)
@@ -22,20 +40,33 @@ export const createEvent = async (req, res) => {
 
 export const updateEvent = async (req, res) => {
     try {
-        const event = await Event.findByIdAndUpdate(req.params.id, req.body, { new: true })
-        res.status(200).json({ success: true, data: event })
+        const event = await Event.findOneAndUpdate(
+            { title: req.params.title }, req.body, { new: true } );
+
+        if (!event) {
+            return res.status(404).json({ success: false, message: 'Event not found' });
+        }
+
+        res.status(200).json({ success: true, data: event });
     } catch (error) {
-        console.log('Error:', error.message)
-        res.status(500).json({ success: false, message: 'Server Error' })
+        console.log('Error:', error.message);
+        res.status(500).json({ success: false, message: 'Server Error' });
     }
-}
+};
+
 
 export const deleteEvent = async (req, res) => {
     try {
-        await Event.findByIdAndDelete(req.params.id)
-        res.status(200).json({ success: true, data: {} })
+        const deletedEvent = await Event.findOneAndDelete({ title: req.params.title });
+
+        if (!deletedEvent) {
+            return res.status(404).json({ success: false, message: 'Event not found' });
+        }
+
+        res.status(200).json({ success: true, data: {} });
     } catch (error) {
-        console.log('Error:', error.message)
-        res.status(500).json({ success: false, message: 'Server Error' })
+        console.log('Error:', error.message);
+        res.status(500).json({ success: false, message: 'Server Error' });
     }
-}
+};
+

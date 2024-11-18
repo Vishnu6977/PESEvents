@@ -47,6 +47,10 @@ const Navbar = () => {
         Timeline
         <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-current'></span>
       </Link>
+      <Link to='/admin' onClick={() => window.scrollTo(0, 0)} className='cursor-pointer group transition duration-300'>
+        Admin
+        <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-current'></span>
+      </Link>
       <Link to='/login' className='navbtn rounded-2xl px-5 py-3 shadow-lg'>
         Get Started
       </Link>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='low:h-full lg:h-[40vh] footerbg flex low:flex-col lg:flex-row justify-between items-center text-white p-16'>
+    <div className='low:h-full lg:h-[40vh] bg-black flex low:flex-col lg:flex-row justify-between items-center text-white p-16'>
         <div>
             <img src='/logo.png' alt='logo' className='low:h-16 xl:h-20 low:mb-4 lg:mb-16'/>
             <p className='low:text-md max-lg:hidden'>© PESEvents all rights reserved</p>

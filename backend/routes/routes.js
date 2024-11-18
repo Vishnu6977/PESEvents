@@ -1,5 +1,5 @@
 import express from 'express'
-import { createEvent, deleteEvent, getEvents, updateEvent } from '../controllers/event.controllers.js'
+import { createEvent, searchEvent, deleteEvent, getEvents, updateEvent } from '../controllers/event.controllers.js'
 
 const router = express.Router()
 
@@ -11,8 +11,10 @@ router.get('/events', getEvents)
 
 router.post('/events', createEvent)
 
-router.put('/events/:id', updateEvent)
+router.get('/search/:title', searchEvent);
 
-router.delete('/events/:id', deleteEvent)
+router.put('/events/:title', updateEvent)
+
+router.delete('/events/:title', deleteEvent)
 
 export default router
