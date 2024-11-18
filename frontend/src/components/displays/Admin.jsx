@@ -51,7 +51,7 @@ const Admin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const baseURL = 'http://localhost:8000/backend/api/events';
+    const baseURL = 'https://pesevents.onrender.com/backend/api/events';
   
     try {
       let response;
@@ -64,7 +64,7 @@ const Admin = () => {
           body: JSON.stringify({ title: formData.name }),
         });
       } else if (search) {
-        response = await fetch(`http://localhost:8000/backend/api/search/${formData.name}`, {
+        response = await fetch(`https://pesevents.onrender.com/backend/api/search/${formData.name}`, {
           method: 'GET',
         });
       } else if (update) {
