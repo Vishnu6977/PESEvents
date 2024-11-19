@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from '../utils/Navbar';
-import Footer from '../utils/Footer';
-import { set } from 'mongoose';
 
 const Admin = () => {
   const [create, setCreate] = useState(true);
